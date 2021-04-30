@@ -13,13 +13,13 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - notebook
   run:
     - dill >=0.3.1
@@ -28,7 +28,7 @@ requirements:
     - munch >=2.5
     - numpy >=1.18
     - pattern
-    - python
+    - python >=3.6
     - spacy >=2.2
     - transformers >=2.8
     - notebook
