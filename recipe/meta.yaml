@@ -1,13 +1,13 @@
 {% set name = "checklist" %}
-{% set version = "0.0.10" %}
+{% set version = "0.0.11" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
-source: 
+source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8b467152eef73b42a4fe30c7fbe9b343cefd82f8f09afe95088a71dcdbdfe2ce
+  sha256: 427cf87dbf47ce9f9ab059a9bbf393d9ebf967e266f8fca377420bd6995a95ac
   patches:
     - jupyter_import.patch
 
@@ -44,7 +44,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "Beyond Accuracy: Behavioral Testing of NLP Models with CheckList"
+  summary: 'Beyond Accuracy: Behavioral Testing of NLP Models with CheckList'
   dev_url: http://github.com/marcotcr/checklist
 
 extra:
